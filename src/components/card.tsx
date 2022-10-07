@@ -5,12 +5,14 @@ import classNames from "classnames";
 type CardProps = {
   withCustomRadius?: boolean;
   size?: "sm" | "lg";
+  className?: string;
   children: ReactNode;
 };
 
 export const Card = ({
   withCustomRadius = false,
   size = "lg",
+  className,
   children,
 }: CardProps) => {
   return (
@@ -20,6 +22,7 @@ export const Card = ({
           withCustomRadius,
         "px-6 py-5": size === "sm",
         "p-10": size === "lg",
+        [`${className}`]: !!className,
       })}
     >
       {children}

@@ -22,24 +22,19 @@ const Home = () => {
             <div className="mt-16 grid grid-cols-2 gap-y-5">
               <HeroItem
                 icon={<ShoppingCart weight="fill" />}
-                content="Compra simples e segura"
                 color="bg-yellow-dark"
-              />
-              <HeroItem
-                icon={<Package weight="fill" />}
-                content="Embalagem mantém o café intacto"
-                color="bg-accent-text"
-              />
-              <HeroItem
-                icon={<Timer weight="fill" />}
-                content="Entrega rápida e rastreada"
-                color="bg-yellow"
-              />
-              <HeroItem
-                icon={<Coffee weight="fill" />}
-                content="O café chega fresquinho até você"
-                color="bg-purple"
-              />
+              >
+                Compra simples e segura
+              </HeroItem>
+              <HeroItem icon={<Package weight="fill" />} color="bg-accent-text">
+                Embalagem mantém o café intacto
+              </HeroItem>
+              <HeroItem icon={<Timer weight="fill" />} color="bg-yellow">
+                Entrega rápida e rastreada
+              </HeroItem>
+              <HeroItem icon={<Coffee weight="fill" />} color="bg-purple">
+                O café chega fresquinho até você
+              </HeroItem>
             </div>
           </div>
           <div className="flex-shrink-0">

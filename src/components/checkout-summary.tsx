@@ -1,47 +1,21 @@
-import Image from "next/future/image";
-
-import { Trash } from "phosphor-react";
-
-import coffee from "@/assets/coffee.png";
 import { Card } from "@/components/card";
-import { Counter } from "@/components/counter";
-
-const CoffeeItem = () => {
-  return (
-    <div className="flex items-center">
-      <Image src={coffee} alt="" width={64} height={64} />
-
-      <div className="ml-5 flex flex-col gap-2">
-        <span className="text-accent-subtitle">Expresso Tradicional</span>
-        <div className="flex items-center gap-2">
-          <Counter />
-          <button className="bg-accent-button hover:bg-accent-button-hover duration-200 rounded-md px-2 h-[38px] uppercase text-xs flex items-center gap-1">
-            <Trash className="text-purple" size={16} />
-            Remover
-          </button>
-        </div>
-      </div>
-
-      <strong className="self-start flex-1">R$ 9,90</strong>
-    </div>
-  );
-};
+import { CheckoutItem } from "@/components/checkout-item";
 
 export const CheckoutSummary = () => {
   return (
     <aside className="w-[448px]">
-      <h2 className="font-heading font-lg text-accent-subtitle mb-4">
+      <h2 className="font-heading font-lg text-accent-subtitle">
         Cafés selecionados
       </h2>
 
-      <Card withCustomRadius>
+      <Card withCustomRadius className="mt-4">
         <ul>
           <li>
-            <CoffeeItem />
+            <CheckoutItem />
             <hr className="h-[1px] w-full bg-accent-button border-none my-6" />
           </li>
           <li>
-            <CoffeeItem />
+            <CheckoutItem />
           </li>
         </ul>
 

@@ -13,7 +13,7 @@ import { RadioButton, RadioGroup } from "@/components/radio-group";
 
 const Checkout = () => {
   return (
-    <main className="container flex items-start gap-8">
+    <main className="container flex items-start gap-8 mt-10">
       <div className="flex flex-col flex-1">
         <h2 className="font-heading text-lg text-accent-subtitle">
           Complete seu pedido
