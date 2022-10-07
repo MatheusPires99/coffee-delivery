@@ -20,6 +20,8 @@ module.exports = {
       "accent-text": "#574F4D",
       "accent-subtitle": "#403937",
       "accent-title": "#272221",
+
+      white: "#fff",
     },
     fontFamily: {
       heading: "'Baloo 2', cursive",
@@ -31,5 +33,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-radix")()],
 };

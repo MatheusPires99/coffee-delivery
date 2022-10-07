@@ -17,7 +17,7 @@ export const Header = () => {
           <span className="text-purple-dark">Pará de Minas, MG</span>
         </div>
         <Link
-          href="/cart"
+          href="/checkout"
           className="p-2 bg-yellow-light text-yellow-dark rounded-md"
         >
           <ShoppingCart weight="fill" size={22} />

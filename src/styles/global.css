@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply text-accent-subtitle bg-accent-background antialiased;
+    @apply text-accent-text bg-accent-background antialiased;
   }
 
   body, button, input, textarea {

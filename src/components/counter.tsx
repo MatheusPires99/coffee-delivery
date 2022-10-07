@@ -2,7 +2,7 @@ import { Minus, Plus } from "phosphor-react";
 
 export const Counter = () => {
   return (
-    <div className="bg-accent-button rounded-md p-2 flex items-center gap-1">
+    <div className="bg-accent-button rounded-md px-2 flex items-center gap-1 h-[38px]">
       <button className="text-purple">
         <Minus size={14} />
       </button>
