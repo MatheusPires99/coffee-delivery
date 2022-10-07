@@ -25,6 +25,11 @@ module.exports = {
       heading: "'Baloo 2', cursive",
       body: "'Roboto', sans-serif",
     },
+    extend: {
+      backgroundImage: {
+        "hero-background": "url(/public/hero-background.png)",
+      },
+    },
   },
   plugins: [],
 };

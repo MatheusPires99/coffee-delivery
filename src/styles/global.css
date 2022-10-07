@@ -19,3 +19,9 @@
     @apply cursor-pointer;
   }
 }
+
+@layer components {
+  .container {
+    @apply max-w-[1120px] w-full mx-auto;
+  }
+}

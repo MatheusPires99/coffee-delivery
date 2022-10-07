@@ -6,7 +6,7 @@ import { Logo } from "./logo";
 
 export const Header = () => {
   return (
-    <header className="py-8 flex items-center justify-between">
+    <header className="container py-8 flex items-center justify-between">
       <Link href="/">
         <Logo />
       </Link>
