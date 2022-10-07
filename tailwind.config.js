@@ -23,7 +23,7 @@ module.exports = {
     },
     fontFamily: {
       heading: "'Baloo 2', cursive",
-      body: "'Roboto, sans-serif'",
+      body: "'Roboto', sans-serif",
     },
   },
   plugins: [],
