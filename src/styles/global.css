@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  #__next {
+    @apply h-screen flex flex-col;
+  }
+
+  body {
+    @apply text-accent-subtitle bg-accent-background antialiased;
+  }
+
+  body, button, input, textarea {
+    @apply font-body;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
