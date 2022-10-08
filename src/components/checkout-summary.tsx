@@ -29,12 +29,12 @@ export const CheckoutSummary = () => {
   return (
     <aside className="w-[448px]">
       <h2 className="font-heading font-lg text-accent-subtitle">
-        Cafés selecionados
+        Selected coffees
       </h2>
 
       <Card withCustomRadius className="mt-4">
         {cart.length === 0 ? (
-          <span>Seu carrinho está vazio</span>
+          <span>Your cart is empty</span>
         ) : (
           <>
             <ul className="max-h-[316px] overflow-auto">
@@ -58,11 +58,11 @@ export const CheckoutSummary = () => {
 
             <div className="flex flex-col gap-3">
               <div className="flex items-center justify-between">
-                <span className="text-sm">Total de itens</span>
+                <span className="text-sm">Total items</span>
                 <span>{priceTotalAmountFormatted}</span>
               </div>
               <div className="flex items-center justify-between">
-                <span className="text-sm">Entrega</span>
+                <span className="text-sm">Delivery</span>
                 <span>{deliveryPriceFormatted}</span>
               </div>
               <div className="flex items-center justify-between">
@@ -79,7 +79,7 @@ export const CheckoutSummary = () => {
               className="w-full bg-yellow hover:bg-yellow-dark duration-200 rounded-md uppercase text-sm text-white font-bold py-3 mt-6"
               onClick={handleConfirmOrder}
             >
-              Confirmar pedido
+              Confirm order
             </button>
           </>
         )}

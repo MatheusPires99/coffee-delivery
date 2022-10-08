@@ -16,45 +16,43 @@ const Checkout = () => {
     <main className="container flex items-start gap-8 mt-10">
       <div className="flex flex-col flex-1">
         <h2 className="font-heading text-lg text-accent-subtitle">
-          Complete seu pedido
+          Complete your order
         </h2>
         <div className="flex flex-col gap-3 mt-4">
           <Card>
             <div className="flex items-start gap-2">
               <MapPinLine size={22} className="text-yellow-dark" />
               <div className="flex flex-col gap-0.5">
-                <span className="text-accent-subtitle">
-                  Endereço de Entrega
-                </span>
+                <span className="text-accent-subtitle">Delivery address</span>
                 <span className="text-sm">
-                  Informe o endereço onde deseja receber seu pedido
+                  Enter the address where you want to receive your order
                 </span>
               </div>
             </div>
             <form className="mt-8 flex flex-col gap-4">
               <div className="w-[200px]">
-                <Input placeholder="CEP" />
+                <Input placeholder="ZIP Code" />
               </div>
               <div>
-                <Input placeholder="Rua" />
+                <Input placeholder="Street" />
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-[200px]">
-                  <Input placeholder="Número" />
+                  <Input placeholder="Number" />
                 </div>
                 <div className="flex-1">
-                  <Input placeholder="Complemento" />
+                  <Input placeholder="Complement" />
                 </div>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-[200px]">
-                  <Input placeholder="Bairro" />
+                  <Input placeholder="Neighborhood" />
                 </div>
                 <div className="flex-1">
-                  <Input placeholder="Cidade" />
+                  <Input placeholder="City" />
                 </div>
                 <div className="w-[60px]">
-                  <Input placeholder="UF" />
+                  <Input placeholder="State" />
                 </div>
               </div>
             </form>
@@ -63,10 +61,9 @@ const Checkout = () => {
             <div className="flex items-start gap-2">
               <CurrencyDollar size={22} className="text-purple" />
               <div className="flex flex-col gap-0.5">
-                <span className="text-accent-subtitle">Pagamento</span>
+                <span className="text-accent-subtitle">Payment</span>
                 <span className="text-sm">
-                  O pagamento é feito na entrega. Escolha a forma que deseja
-                  pagar
+                  Payment is made on delivery. Choose the way you want pay
                 </span>
               </div>
             </div>
@@ -75,15 +72,15 @@ const Checkout = () => {
               <RadioGroup>
                 <RadioButton value="credit-card">
                   <CreditCard className="text-purple" size={16} />
-                  Cartão de Crédito
+                  Credit Card
                 </RadioButton>
                 <RadioButton value="debit-card">
                   <Bank className="text-purple" size={16} />
-                  Cartão de Débito
+                  Debit Card
                 </RadioButton>
                 <RadioButton value="cash">
                   <Money className="text-purple" size={16} />
-                  Dinheiro
+                  Cash
                 </RadioButton>
               </RadioGroup>
             </div>

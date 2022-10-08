@@ -14,27 +14,27 @@ const Home = () => {
         <div className="container flex align-center justify-between gap-14">
           <div>
             <h1 className="font-heading text-5xl text-accent-title">
-              Encontre o café perfeito para qualquer hora do dia
+              Find the perfect coffee for every time
             </h1>
             <p className="text-xl text-accent-subtitle mt-4">
-              Com o Coffee Delivery você recebe seu café onde estiver, a
-              qualquer hora
+              With Coffee Delivery you receive your coffee wherever you are, any
+              time
             </p>
             <div className="mt-16 grid grid-cols-2 gap-y-5">
               <HeroItem
                 icon={<ShoppingCart weight="fill" />}
                 color="bg-yellow-dark"
               >
-                Compra simples e segura
+                Simple and secure purchase
               </HeroItem>
               <HeroItem icon={<Package weight="fill" />} color="bg-accent-text">
-                Embalagem mantém o café intacto
+                Packaging keeps the coffee intact
               </HeroItem>
               <HeroItem icon={<Timer weight="fill" />} color="bg-yellow">
-                Entrega rápida e rastreada
+                Fast and tracked delivery
               </HeroItem>
               <HeroItem icon={<Coffee weight="fill" />} color="bg-purple">
-                O café chega fresquinho até você
+                Coffee arrives fresh to you
               </HeroItem>
             </div>
           </div>
@@ -51,7 +51,7 @@ const Home = () => {
       </section>
       <section className="container mt-8 pb-40">
         <h2 className="font-heading text-[32px] text-accent-title">
-          Nossos cafés
+          Our coffees
         </h2>
         <div className="mt-14 grid grid-cols-4 gap-x-8 gap-y-10">
           {coffees.map((coffee) => (
