@@ -2,7 +2,6 @@ import Image from "next/future/image";
 
 import { MapPin, Money, Timer } from "phosphor-react";
 
-import succesImage from "@/assets/success.svg";
 import { Card } from "@/components/card";
 import { HeroItem } from "@/components/hero-item";
 
@@ -36,7 +35,7 @@ const Success = () => {
       </div>
 
       <div>
-        <Image src={succesImage} alt="" width={492} height={292} />
+        <Image src="/images/success.svg" alt="" width={492} height={292} />
       </div>
     </main>
   );
